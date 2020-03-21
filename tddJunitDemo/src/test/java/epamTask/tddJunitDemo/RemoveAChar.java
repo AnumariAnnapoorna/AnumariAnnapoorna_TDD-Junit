@@ -15,6 +15,8 @@ class RemoveAChar {
 	 * 4.case4:"BBAA" => "BBAA"
 	 * 5.case5:"AABAA" => "BAA"
 	 * 6.case6:"" => ""
+	 * 7.case7:"A" => ""
+	 * 8.case8:"B" => "B"
 	 */
 	RemoveACharBeg removeAchar;
 	
@@ -54,4 +56,13 @@ class RemoveAChar {
 		assertEquals("",removeAchar.remove(""));
 	}
 
+	@Test
+	void case7() {
+		assertEquals("",removeAchar.remove("A"));
+	}
+	
+	@Test
+	void case8() {
+		assertEquals("B",removeAchar.remove("B"));
+	}
 }
